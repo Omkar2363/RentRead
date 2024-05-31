@@ -86,11 +86,19 @@ To run the application follow the following steps :
 
 #### 3. Build the project :
 
-    gradle build 
+    gradle clean build 
 
 #### 4. Run the application :
 
-    gradle bootrun
+To run the application, use the following command
+
+    java -jar build/libs/RentRead-0.0.1-SNAPSHOT.jar
+
+#### 5. Accessing the APIs :
+
+Once the application is running, you can access the API at 
+
+    http://localhost:8080
 
 
 
@@ -99,6 +107,7 @@ To run the application follow the following steps :
 To run the unit tests :
 
     gradle test
+
 ## Endpoints :
 
 ### 1. Public Endpoints
@@ -116,11 +125,14 @@ To run the unit tests :
 - Rent a Book: POST /books/{bookId}/rent
 - Return a Book: POST /books/{bookId}/return
 - Browse Books: GET /books (available to all authenticated users)
+
 ## Postman Collection
 
 A Postman collection has been included to test the API endpoints. Import the collection into Postman and start testing the API.
 
-https://www.postman.com/omkar2363/workspace/rentread/collection/28208818-2cbcc214-0f16-41a8-883e-150b97480255?action=share&creator=28208818
+[https://www.postman.com/omkar2363/workspace/rentread/collection/28208818-2cbcc214-0f16-41a8-883e-150b97480255?action=share&creator=28208818
+](RentRead Postman Collection)
+
 ## Project Structure
 
 The project follows a layered architecture approach:
