@@ -73,17 +73,12 @@ To run the application follow the following steps :
 
 - Update the application.properties file with your MySQL database details:
 
-    spring.datasource.url=jdbc:mysql://localhost:3306/rentread?createDatabaseIfNotExist=true
-    
-    spring.datasource.username=<your-username>
- 
-    spring.datasource.password=<your-password>
-
-    spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-
-    spring.jpa.hibernate.ddl-auto=update
-
-    spring.jpa.show-sql=true
+  spring.datasource.url=jdbc:mysql://localhost:3306/rentread?createDatabaseIfNotExist=true 
+  spring.datasource.username=<your-username>
+  spring.datasource.password=<your-password>
+  spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+  spring.jpa.hibernate.ddl-auto=update
+  spring.jpa.show-sql=true
 
 #### 2. Navigate to the project directory :
 
