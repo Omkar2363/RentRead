@@ -130,8 +130,8 @@ To run the unit tests :
 
 A Postman collection has been included to test the API endpoints. Import the collection into Postman and start testing the API.
 
-[https://www.postman.com/omkar2363/workspace/rentread/collection/28208818-2cbcc214-0f16-41a8-883e-150b97480255?action=share&creator=28208818
-](RentRead Postman Collection)
+[RentRead Postman Collection](https://www.postman.com/omkar2363/workspace/rentread/collection/28208818-2cbcc214-0f16-41a8-883e-150b97480255?action=share&creator=28208818
+)
 
 ## Project Structure
 
