@@ -18,7 +18,8 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.csrf().disable()
+//        http.csrf().disable()         Deprecated Way
+        http.csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests((requests) -> requests
                         .requestMatchers("/register", "/login").permitAll()
                         .requestMatchers(HttpMethod.POST, "/books/{bookId}/rent", "/books/{bookId}/return").hasAnyRole("USER","ADMIN")
