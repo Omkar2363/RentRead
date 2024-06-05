@@ -22,9 +22,10 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-
+    @Column(nullable = true)
     private String firstName;
 
+    @Column(nullable = true)
     private String lastName;
 
     @Enumerated(EnumType.STRING)
