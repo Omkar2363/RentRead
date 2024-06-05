@@ -9,7 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
+
+import java.security.Principal;
 
 @RestController
 @RequestMapping("/books")
@@ -36,9 +40,26 @@ public class RentalController {
     }
 
 
-
-
-
-
-
 }
+
+
+
+
+/*  We can also use this approach to get the loggedInUserId and no need to get the userId explicitly:
+
+    @PreAuthorize("hasAnyRole('USER', 'ADMIN')")
+    @PostMapping("/{bookId}/rent")
+    public ResponseEntity<Rental> rentBook(@PathVariable Long bookId) {
+        Long currUserId = getLoggedInUserId();
+        return new ResponseEntity<>(rentalService.rentBook(currUserId, bookId), HttpStatus.OK);
+    }
+
+    private Long getLoggedInUserId(){
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String userEmail = authentication.getName();
+        return rentalService.findUserIdByEmail(userEmail);
+    }
+
+*/
+
+
