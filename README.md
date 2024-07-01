@@ -96,10 +96,14 @@ To run the application, use the following command
 
 #### 5. Accessing the APIs :
 
-Once the application is running, you can access the API at 
+##### a. Local Server : 
+Once the application is running locally, you can access the API at 
 
     http://localhost:8080
 
+##### b. Deployed Server : 
+As the application is deployed successfully, you can access the API at 
+    https://stayeasedeploy.onrender.com/swagger-ui/index.html
 
 
 ## Running Tests :
