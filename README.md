@@ -94,17 +94,10 @@ To run the application, use the following command
 
     java -jar build/libs/RentRead-0.0.1-SNAPSHOT.jar
 
-#### 5. Accessing the APIs :
-
-##### a. Local Server : 
+#### 5. Accessing the APIs : 
 Once the application is running locally, you can access the API at 
 
     http://localhost:8080
-
-##### b. Deployed Server : 
-As the application is deployed successfully, you can access the API at 
-    
-    https://stayeasedeploy.onrender.com/swagger-ui/index.html
 
 
 ## Running Tests :
